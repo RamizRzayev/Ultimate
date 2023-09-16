@@ -35,6 +35,7 @@ Before running this project, ensure you have the following prerequisites install
 
  	
 4. **Check a result** 
-    After containers up wait 5-10 minutes (while the process realy start to work) and  check 
+    After containers up wait 5-10 minutes (while the process realy start to work) and  check.
+    Also look at simulator_log.txt (in project's folder) to ensure that socket started to work.
 	
    `python check_Mongo_collection.py`
