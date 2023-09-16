@@ -21,6 +21,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install pytest 
+          pip install beautifulsoup4 
     
       - name: Run tests
         run: |
