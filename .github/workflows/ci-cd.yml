@@ -10,18 +10,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.x  # Choose the Python version you need
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x  # Choose the Python version you need
     
-     - name: Install dependencies
+      - name: Install dependencies
         run: |
           pip install pytest 
     
-    - name: Run tests
-      run: |
-        pytest /app/test_processor.py  # Modify the path to your test file
+      - name: Run tests
+        run: |
+          pytest /app/test_processor.py  # Modify the path to your test file
