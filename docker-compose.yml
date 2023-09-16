@@ -22,6 +22,7 @@ services:
       - mynetwork
     volumes:
       - .:/app  # Mount the current directory into the container
+      - ./tests:/app/test
     environment:
       - SPARK_MASTER_HOST=spark-master
     command: spark-submit --master spark://spark-master:7077 /app/processor.py
