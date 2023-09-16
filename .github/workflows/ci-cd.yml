@@ -24,4 +24,4 @@ jobs:
     
       - name: Run tests
         run: |
-          pytest /app/test_processor.py
+          pytest test_processor.py
