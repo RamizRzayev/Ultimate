@@ -23,18 +23,18 @@ Before running this project, ensure you have the following prerequisites install
 
    Clone this repository to your local machine:
 
-   git clone https://github.com/RamizRzayev/Ultimate
+   `git clone https://github.com/RamizRzayev/Ultimate`
    
 2. **Navigate to the folder**    
    
-   cd twitter-covid-data-engineering
+   `cd twitter-covid-data-engineering`
 
 3. **Build and start containers** 
     
-   docker-compose up --build -d
+   `docker-compose up --build -d`
 
  	
 4. **Check a result** 
-    A minutes later check 
+    After containers up wait 5-10 minutes (while the process realy start to work) and  check 
 	
-   python check_Mongo_collection.py
+   `python check_Mongo_collection.py`
