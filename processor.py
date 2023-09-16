@@ -41,8 +41,8 @@ class SocketInput:
         print("Received request from: " + str(addr))
         return c_socket
 
-# Twitter data scraper
-class TwitterScraper:
+# Coronavirus data scraper
+class CoronavirusScraper:
     @staticmethod
     def fetch_covid_data():
         page = requests.get("https://www.worldometers.info/coronavirus/")
@@ -60,7 +60,7 @@ class DataProcessor:
 
     def process_stream(self, batch_df, batch_id):
         # Fetch COVID-19 data
-        total_cases = TwitterScraper.fetch_covid_data()
+        total_cases = CoronavirusScraper.fetch_covid_data()
 
         # Timestamp
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")

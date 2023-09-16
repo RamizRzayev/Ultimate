@@ -16,7 +16,8 @@ Before running this project, ensure you have the following prerequisites install
 - Docker: [Install Docker](https://docs.docker.com/get-docker/)
 - Docker Compose: [Install Docker Compose](https://docs.docker.com/compose/install/)
 
-## Getting Started
+## Getting Started .   Configuration :You can customize the configuration settings in the Config class in simulator.py and processor.py to suit your needs. 	
+
 
 1. **Download the Project**
 
@@ -24,17 +25,16 @@ Before running this project, ensure you have the following prerequisites install
 
    git clone https://github.com/RamizRzayev/Ultimate
    
-   Navigate 
+2. **Navigate to the folder**    
    
    cd twitter-covid-data-engineering
 
-   Build and start containers: 
+3. **Build and start containers** 
     
    docker-compose up --build -d
 
-   Configuration
-	You can customize the configuration settings in the Config class in simulator.py and processor.py to suit your needs. 	
+ 	
+4. **Check a result** 
+    A minutes later check 
 	
-	A minutes later check 
-	
-	python check_Mongo_collection.py
+   python check_Mongo_collection.py
